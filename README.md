@@ -29,6 +29,14 @@ Build a Release binary with the `-release` build preset instead:
 In VS Code, open **Terminal > Run Task** and choose **Configure CMake**,
 **Build Debug**, **Build Release**, or **Test Debug**.
 
+> Note: `Ctrl+Shift+B` (Run Build Task) runs the **CMake: build** task contributed
+> by the *CMake Tools* extension, which builds the preset's `targets`. The build
+> presets therefore set `"targets": ["ALL_BUILD"]`: **Visual Studio** is a
+> multi-config generator with no `all` target, so `--target all` fails with
+> `MSBUILD : error MSB1009: Project file does not exist. Switch: all.vcxproj`.
+> Reload the window after editing `CMakePresets.json` so the extension
+> recomputes the task definition.
+
 Generated files stay under `out/build/<configure preset>/`:
 
 ```powershell

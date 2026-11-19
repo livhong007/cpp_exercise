@@ -20,13 +20,19 @@
             "name": "Visual Studio Build Tools 2026 Release - amd64-debug",
             "displayName": "Visual Studio Build Tools 2026 Release - amd64 - Debug",
             "configurePreset": "Visual Studio Build Tools 2026 Release - amd64",
-            "configuration": "Debug"
+            "configuration": "Debug",
+            "targets": [
+                "ALL_BUILD"
+            ]
         },
         {
             "name": "Visual Studio Build Tools 2026 Release - amd64-release",
             "displayName": "Visual Studio Build Tools 2026 Release - amd64 - Release",
             "configurePreset": "Visual Studio Build Tools 2026 Release - amd64",
-            "configuration": "Release"
+            "configuration": "Release",
+            "targets": [
+                "ALL_BUILD"
+            ]
         }
     ],
     "testPresets": [
