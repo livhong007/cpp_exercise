@@ -1,0 +1,4 @@
+add_executable(cpp_exercise_tests greeter_tests.cpp)
+target_link_libraries(cpp_exercise_tests PRIVATE cpp_exercise_lib)
+
+add_test(NAME greeter_tests COMMAND cpp_exercise_tests)

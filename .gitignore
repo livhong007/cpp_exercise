@@ -1,0 +1,32 @@
+
+# CMake build directories and generated files
+/build/
+/out/
+/cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CMakePresets.json
+Makefile
+
+# Compiled outputs
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+*.pdb
+
+# Visual Studio user and build files
+.vs/
+.vscode/
+*.user
+*.suo
+*.ilk
+Debug/
+Release/
+x64/
+x86/
