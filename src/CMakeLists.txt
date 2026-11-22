@@ -1,5 +1,6 @@
 add_library(cpp_exercise_lib
     app/greeter.cpp
+    codility_test/binary_gap.cpp
 )
 
 target_sources(cpp_exercise_lib
